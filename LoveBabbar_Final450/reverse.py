@@ -1,14 +1,16 @@
-def reverse(lst):
+#Time Complexity = O(n)
+
+def reverse(nums):
     i = 0
-    j = len(lst)-1
+    j = len(nums)-1
 
     while(i<j):
-        lst[i],lst[j] = lst[j], lst[i]
+        nums[i],nums[j] = nums[j], nums[i]
         i += 1
         j -= 1
 
-    return lst
+    return nums
 
-l = [2,5,3,6,2,1,4]
-print(l)
-print(reverse(l))
+lst = [2,5,3,6,2,1,4]
+print(lst)
+print(reverse(lst))
